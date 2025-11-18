@@ -7,6 +7,6 @@ CREATE TABLE `factura` (
   `forma_pago` varchar(32) NOT NULL,
   `estado_factura` int(32) NOT NULL,
   `descuento` int(32) DEFAULT NULL,
-  `propina` decimal(32) DEFAULT NULL,
-  `costo_total` decimal(32) NOT NULL
+  `propina` decimal(10,2) DEFAULT NULL,
+  `costo_total` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
